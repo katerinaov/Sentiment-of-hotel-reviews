@@ -30,11 +30,11 @@ Firstly I created one whole datatset with all reviews with only text (Review tex
  
  It took apprx 3 hours to train my model just using CPUs and I got next results:
  
- Accuracy:
- ROC AUC score:
- Precision
- Recall
- F1
+ - Accuracy: 90.1%
+ - ROC AUC score: 90.2%
+ - Precision: 90%
+ - Recall: 90%
+ - F1: 90%
  
  # 5. Deploying the model with FLask
  
