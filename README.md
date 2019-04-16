@@ -39,7 +39,7 @@ Firstly I created one whole datatset with all reviews with only text (Review tex
  # 5. Deploying the model with FLask
  
  To deploy the model and show result I decided to create a simple app with Flask. I just used my model and several cleaning functions along with FLASK to show results. Also, I created AWS instance and run my app on it. Check this
- [link](18.136.216.216 ). 
+ [link](http://18.136.216.216 ). 
  
  
   ## Requirements
