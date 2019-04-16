@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<title>Anywhr.Analytics</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style>
+body,h1,h2 {font-family: "Raleway", Arial, Helvetica, sans-seri}
+.mySlides {display: none}
+input{text-align:center}
+</style>
+
+<body>
+<div class="w3-row" style="margin-top:150px; margin-left:220px">
+    <div class="w3-cell">
+        <header class="w3-center">
+          <h1><b>Enter your text</b></h1>
+          <p><b>and check the polarity of your sentence</b></p>
+            <p><input id="city-id" type="text" size="55" placeholder="Bla bla bla" name="text" required></p>
+          <p><button class="w3-button w3-pink" type="submit">Get the polarity</button></p>
+        </header>
+        <div id="new_div" class="w3-container" >
+        </div>
+    </div>
+
+    <div class="w3-cell">
+        <div id="image" class="w3-container w3-cell">
+          <img src="./static/shutterstock_215539510.jpg" alt="Image" style="width: 100%px;
+           height: 100%;"/>
+        </div>
+    </div>
+
+</div>
+
+<script>
+$("button").click(function(){
+  var text = document.getElementById("city-id").value;
+
+  $.ajax({
+    url: "/polarity",
+    data: {"text": text},
+    success: function(response) {
+        //Do Something
+        $("#new_div").html(response);
+    },
+    error: function(xhr) {
+        //Do Something to handle error
+        window.alert("Error. Check the values format");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
