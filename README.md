@@ -1,7 +1,7 @@
 # Sentiment analysis of hotel reviews
 This project is a simple service where you can check the polarity of any sentence, ideally it'd be better to check it on review-type text, as it was trained on the same type of data.
 
-To check how it works go to this  [link](http://18.136.216.216 ). Enter any text and click 'Get the polarity'
+To check how it works go to this  [link](https://sentiment-of-reviews.onrender.com). Enter any text and click 'Get the polarity'
 
 To crate this project I followed next steps:
   1. Getting the data
@@ -38,8 +38,8 @@ Firstly I created one whole datatset with all reviews with only text (Review tex
  
  # 5. Deploying the model with FLask
  
- To deploy the model and show result I decided to create a simple app with Flask. I just used my model and several cleaning functions along with FLASK to show results. Also, I created AWS instance and run my app on it. Check this
- [link](http://18.136.216.216 ). 
+ To deploy the model and show result I decided to create a simple app with Flask. I just used my model and several cleaning functions along with FLASK to show results. Also, I created Render Web Service to run my app on it. Check this
+ [link](https://sentiment-of-reviews.onrender.com). 
  
  
   ## Requirements
