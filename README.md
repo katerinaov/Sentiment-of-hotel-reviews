@@ -24,7 +24,7 @@ Firstly I created one whole datatset with all reviews with only text (Review tex
  
  # 3. Building a model
  
- I used CNN+LSTM layers to classify the reviews. For more details, please go check 'LATM_CNN_model' notebook.
+ I used CNN+LSTM layers to classify the reviews. For more details, please go check 'LATM_CNN_model' notebook. If the notebook doesn't work, click [here](https://nbviewer.jupyter.org/github/katerinaov/Sentiment-of-hotel-reviews/blob/master/LSTM_CNN_model.ipynb)
  
  # 4. Model evaluation
  
